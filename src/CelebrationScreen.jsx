@@ -18,7 +18,7 @@ export default function CelebrationScreen() {
     <motion.section className="celebration-card" initial={{ opacity: 0, scale: 0.8, y: 18 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ type: 'spring', stiffness: 150, damping: 16 }}>
       <div className="glow" aria-hidden="true" />
       <div className="celebration-heart" aria-hidden="true">💖</div>
-      <h1>Monish loves u more ❤️</h1>
+      <h1>I love u more ❤️</h1>
       <p>Hehehe, I knew it, princess 🤭❤️</p>
     </motion.section>
   </motion.main>;
