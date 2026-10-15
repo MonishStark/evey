@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import LetterLock from './LetterLock.jsx';
 import QuestionScreen from './QuestionScreen.jsx';
 import CelebrationScreen from './CelebrationScreen.jsx';
@@ -14,5 +15,6 @@ export default function App() {
       {stage === 2 && <QuestionScreen key="question" onCelebrate={() => setStage(3)} />}
       {stage === 3 && <CelebrationScreen key="celebration" />}
     </AnimatePresence>
+    <Analytics />
   </div>;
 }
